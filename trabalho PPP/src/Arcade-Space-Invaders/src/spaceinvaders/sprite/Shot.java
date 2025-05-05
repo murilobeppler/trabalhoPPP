@@ -4,6 +4,8 @@ import javax.swing.ImageIcon;
 
 import spriteframework.sprite.BadSprite;
 
+import java.net.URL;
+
 
 public class Shot extends BadSprite {
 
@@ -17,7 +19,7 @@ public class Shot extends BadSprite {
 
     private void initShot(int x, int y) {
 
-        String shotImg = "images/shot.png";
+        URL shotImg = getClass().getResource("/images/shot.png");
         ImageIcon ii = new ImageIcon(shotImg);
         setImage(ii.getImage());
 

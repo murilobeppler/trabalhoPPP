@@ -7,7 +7,6 @@ import spriteframework.MainFrame;
 
 public class SpaceInvadersGame extends MainFrame {
 
-
 	public SpaceInvadersGame () {
 		super("Space Invaders");
 	}

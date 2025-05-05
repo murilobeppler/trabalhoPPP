@@ -4,6 +4,8 @@ import javax.swing.ImageIcon;
 
 import spriteframework.sprite.BadSprite;
 
+import java.net.URL;
+
 public class Bomb extends BadSprite {
 
     private boolean destroyed;
@@ -20,7 +22,8 @@ public class Bomb extends BadSprite {
         this.x = x;
         this.y = y;
 
-        String bombImg = "images/bomb.png";
+        URL bombImg = getClass().getResource("/images/bomb.png");
+        //String bombImg = "images/bomb.png";
         ImageIcon ii = new ImageIcon(bombImg);
         setImage(ii.getImage());
     }

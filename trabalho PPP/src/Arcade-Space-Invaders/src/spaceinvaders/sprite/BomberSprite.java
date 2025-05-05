@@ -1,5 +1,6 @@
 package spaceinvaders.sprite;
 
+import java.net.URL;
 import java.util.LinkedList;
 
 import javax.swing.ImageIcon;
@@ -23,7 +24,7 @@ public class BomberSprite extends BadnessBoxSprite {
 
         bomb = new Bomb(x, y);
 
-        String alienImg = "images/alien.png";
+        URL alienImg = getClass().getResource("/images/alien.png");
         ImageIcon ii = new ImageIcon(alienImg);
 
         setImage(ii.getImage());
